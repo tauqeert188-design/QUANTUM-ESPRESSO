@@ -1,0 +1,18 @@
+ &INPUTPP
+    prefix           = 'Zr6CoTe2'
+    outdir           = './tmp/'
+   filplot           = 'charge_density'
+   plot_num          = 0         
+ /
+ &PLOT
+    nfile             = 1
+    filepp(1)         = 'rho_total'
+    weight(1)         = 1.0
+    iflag             = 3          
+    output_format     = 6     
+    fileout           = 'charge_density.cube'
+ /
+
+
+
+

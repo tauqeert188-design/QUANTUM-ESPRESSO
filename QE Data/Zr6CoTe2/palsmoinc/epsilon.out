@@ -1,0 +1,72 @@
+
+     Program epsilon v.7.4.1 starts on  2Aug2025 at  7:19: 3 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     2 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+     7849 MiB available memory on the printing compute node when the environment starts
+
+
+
+     Reading input file...
+     Broadcasting variables...
+     Reading PW restart file...
+
+     Reading xml data from directory:
+
+     ./tmp/Zr6CoTe2.save/
+     file Zr.pbe-mt_fhi.upf: wavefunction(s)  4f renormalized
+     file Co.pbe-mt_fhi.upf: wavefunction(s)  4f renormalized
+     file Te.pbe-mt_fhi.upf: wavefunction(s)  5d 4f renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2688    1785    513                74108    40291    6162
+     Max        2689    1786    514                74109    40292    6163
+     Sum        5377    3571   1027               148217    80583   12325
+
+     Using Slab Decomposition
+
+
+
+     Fermi energy [eV] is: 10.02883
+     The system is a metal (occupations are not fixed)...
+     metallic system: redefining wmin =     0.001000
+
+     Performing eps calculation...
+
+     xx,yy,zz plasmon frequences [eV] are:     8.892858296    9.549527234    9.247077458
+
+     Writing output on file...
+
+
+     eps          :      1.34s CPU      1.45s WALL (       1 calls)
+     dipole_calc  :      1.18s CPU      1.28s WALL (     183 calls)
+
+
+     epsilon      :      1.73s CPU      1.86s WALL
+
+
+   This run was terminated on:   7:19: 5   2Aug2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

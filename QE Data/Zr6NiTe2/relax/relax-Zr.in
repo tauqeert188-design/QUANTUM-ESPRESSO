@@ -1,0 +1,57 @@
+&CONTROL
+    calculation   = 'relax'
+    prefix        = 'Zr6NiTe2'
+    outdir        = './tmp/'
+    forc_conv_thr =  1.00000e-03
+    max_seconds   =  8.64000e+04
+    nstep         =  100
+    pseudo_dir    = '/home/tauqeer/Zr6MTe2/sudopoten'
+/
+
+&SYSTEM
+    a                         =  7.73440
+    b                         =  7.73440
+    c                         =  3.73249
+    degauss                   =  1.00000e-02
+    ecutrho                   =  3.60000e+02
+    ecutwfc                   =  6.00000e+01
+    ibrav                     =  4
+    nat                       =  6
+    nspin                     =  1
+    ntyp                      =  1
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep =  200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {automatic}
+ 3  3  4  0 0 0
+
+ATOMIC_SPECIES
+Zr     91.22400  Zr.pbe-nsp-van.upf
+
+ATOMIC_POSITIONS {angstrom}
+Zr      1.835930   0.000000   0.000000
+Zr     -0.917965   1.589962   0.000000
+Zr      2.939237   5.090908   0.000000
+Zr      4.569674   0.000000   1.856244
+Zr     -2.284837   3.957454   1.856244
+Zr      1.572365   2.723416   1.856244
+
+
+
+

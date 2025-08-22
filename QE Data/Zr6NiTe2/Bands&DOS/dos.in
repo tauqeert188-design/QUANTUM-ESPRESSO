@@ -1,0 +1,10 @@
+&DOS
+    prefix   = 'Zr6NiTe2'
+    outdir   = './tmp/'
+    fildos   = 'Zr6NiTe2.dos'
+    degauss  =  1.00000e-02
+    deltae   =  1.00000e-02
+    emax     =  5.00000e+01
+    emin     = -5.00000e+01
+    ngauss   = 0
+/

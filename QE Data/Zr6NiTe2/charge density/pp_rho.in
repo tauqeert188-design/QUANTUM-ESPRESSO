@@ -1,0 +1,21 @@
+  &INPUTPP
+   prefix            = 'Zr6CoTe2'
+   outdir            = './tmp/'
+   filplot           = 'rho_total'
+   plot_num          = 0          ! total charge density
+ /
+ &PLOT
+    nfile             = 1
+    filepp(1)         = 'rho_total'
+    weight(1)         = 1.0
+    iflag             = 3              ! 3D uniform grid
+    output_format     = 6      ! Gaussian cube
+    fileout           = 'rho_total.cube'
+ /
+
+  
+
+
+
+
+

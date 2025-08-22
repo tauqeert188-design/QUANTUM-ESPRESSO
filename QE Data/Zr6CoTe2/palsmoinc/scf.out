@@ -1,0 +1,145 @@
+
+     Program PWSCF v.7.4.1 starts on  2Aug2025 at  8: 7: 5 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     2 processors
+
+     MPI processes distributed on     1 nodes
+     7743 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Zr.pbe-mt_fhi.upf: wavefunction(s)  4f renormalized
+     file Co.pbe-mt_fhi.upf: wavefunction(s)  4f renormalized
+     file Te.pbe-mt_fhi.upf: wavefunction(s)  5d 4f renormalized
+     Message from routine setup:
+     no reason to have ecutrho>4*ecutwfc
+
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2688    1785    513                74108    40291    6162
+     Max        2689    1786    514                74109    40292    6163
+     Sum        5377    3571   1027               148217    80583   12325
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =      14.6990  a.u.
+     unit-cell volume          =    1284.7966 (a.u.)^3
+     number of atoms/cell      =            9
+     number of atomic types    =            3
+     number of electrons       =        45.00
+     number of Kohn-Sham states=           28
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     360.0000  Ry
+     scf convergence threshold =      1.0E-06
+     mixing beta               =       0.4000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  14.698989  celldm(2)=   0.000000  celldm(3)=   0.467134
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   0.467134 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  2.140714 )  
+
+
+     PseudoPot. # 1 for Zr read from file:
+     /home/tauqeer/Zr6MTe2/sudopoten/Zr.pbe-mt_fhi.upf
+     MD5 check sum: d7174933297848aa528ce1e54352b3ca
+     Pseudo is Norm-conserving, Zval =  4.0
+     Generated using FHI98PP, converted with fhi2upf.x v.5.0.2
+     Using radial grid of  539 points,  3 beta functions with: 
+                l(1) =   0
+                l(2) =   2
+                l(3) =   3
+
+     PseudoPot. # 2 for Co read from file:
+     /home/tauqeer/Zr6MTe2/sudopoten/Co.pbe-mt_fhi.upf
+     MD5 check sum: fb18c45f8d853b01122040565ccfe27f
+     Pseudo is Norm-conserving, Zval =  9.0
+     Generated using FHI98PP, converted with fhi2upf.x v.5.0.2
+     Using radial grid of  523 points,  3 beta functions with: 
+                l(1) =   0
+                l(2) =   2
+                l(3) =   3
+
+     PseudoPot. # 3 for Te read from file:
+     /home/tauqeer/Zr6MTe2/sudopoten/Te.pbe-mt_fhi.upf
+     MD5 check sum: 85962a6ee3e6345fb8c79b5fb43653bb
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using FHI98PP, converted with fhi2upf.x v.5.0.2
+     Using radial grid of  549 points,  3 beta functions with: 
+                l(1) =   1
+                l(2) =   2
+                l(3) =   3
+
+     atomic species   valence    mass     pseudopotential
+     Zr                4.00    91.22400     Zr( 1.00)
+     Co                9.00    58.93320     Co( 1.00)
+     Te                6.00   127.60000     Te( 1.00)
+
+     12 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        Zr     tau(   1) = (   0.1186974   0.2055899   0.0000000  )
+         2        Zr     tau(   2) = (   0.7626053   0.0000000   0.0000000  )
+         3        Zr     tau(   3) = (  -0.3813026   0.6604355   0.0000000  )
+         4        Zr     tau(   4) = (   0.2975946   0.5154489   0.2335668  )
+         5        Zr     tau(   5) = (   0.4048109   0.0000000   0.2335668  )
+         6        Zr     tau(   6) = (  -0.2024054   0.3505765   0.2335668  )
+         7        Co     tau(   7) = (   0.0000000   0.0000000   0.2335668  )
+         8        Te     tau(   8) = (   0.5000000   0.2886751   0.0000000  )
+         9        Te     tau(   9) = (  -0.0000000   0.5773503   0.0000000  )
+
+     number of k points=   793  Gaussian smearing, width (Ry)=  0.0100
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   148217 G-vectors     FFT dimensions: (  90,  90,  45)
+
+     Smooth grid:    80583 G-vectors     FFT dimensions: (  75,  75,  36)
+
+     Estimated max dynamical RAM per process >       1.74 GB
+
+     Estimated total dynamical RAM >       3.47 GB
+
+     Initial potential from superposition of free atoms
+
+     starting charge      53.9849, renormalised to      45.0000
+     Starting wfcs are  144 randomized atomic wfcs

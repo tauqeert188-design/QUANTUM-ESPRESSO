@@ -1,0 +1,70 @@
+&CONTROL
+    calculation            = 'scf'
+    prefix                 = 'Zr6NiTe2'
+    outdir                 = './tmp/'
+    forc_conv_thr          =  1.00000e-03
+    pseudo_dir             = '/home/tauqeer/Zr6MTe2/sudopoten'
+/
+
+&SYSTEM
+    a                      =  7.73440
+    c                      =  3.73249
+    degauss                =  0.02
+    ecutrho                =  360
+    ecutwfc                =  60
+    ibrav                  =  4
+    nat                    =  9
+    nspin                  =  1
+    ntyp                   =  3
+    occupations            = "smearing"
+    smearing               = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr               =  1.00000e-06
+    mixing_beta            =  4.00000e-01
+/
+
+&IONS
+    ion_dynamics           = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {tpiba_b}
+12
+gG     20
+M      20
+K      20
+gG     20
+A      20
+L      20
+H      20
+A      0
+L      20
+M      0
+K      20
+H      0
+
+ATOMIC_SPECIES
+Zr     91.22400  Zr.pbe-mt_fhi.upf
+Ni     58.69340  Ni.pbe-mt_fhi.upf
+Te    127.60000  Te.pbe-mt_fhi.upf
+
+ATOMIC_POSITIONS crystal
+Zr           0.2379872200       0.0000000000       0.0000000000
+Zr          -0.0000000000       0.2379872200       0.0000000000
+Zr           0.7620127800       0.7620127800       0.0000000000
+Zr           0.5923560400       0.0000000000       0.5000000000
+Zr          -0.0000000000       0.5923560400       0.5000000000
+Zr           0.4076439600       0.4076439600       0.5000000000
+Ni           0.0000000000       0.0000000000       0.5000000000
+Te           0.3333333300       0.6666666700       0.0000000000
+Te           0.6666666700       0.3333333300       0.0000000000
+
+
+
+
+
+

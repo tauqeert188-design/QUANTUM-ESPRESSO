@@ -1,0 +1,15 @@
+&INPUTPP
+    calculation   = 'eps'
+    prefix        = 'Zr6NiTe2'
+    outdir        = './tmp/'
+/
+&ENERGY_GRID
+  smeartype       = 'gauss'
+  intersmear      = 0.150
+  intrasmear      = 0.00
+  wmax            = 30.00
+  wmin            = 0.00
+  nw              = 600
+  shift           = 0.00
+/
+

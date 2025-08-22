@@ -1,0 +1,16 @@
+&INPUTPP
+  prefix      = 'Zr6CoTe2'
+  outdir      = './tmp/'
+  filplot     = 'psi2_band15_k20'
+  plot_num    = 7         ! charge density from selected KS states
+  kband(1)    = 15        ! band index (or a list/range)
+  kpoint(1)   = 20        ! k-point index (from the NSCF mesh)
+  kband(2)    = 0         ! (leave 0 if you don’t add more)
+  kpoint(2)   = 0
+/
+&PLOT
+  iflag = 3
+  output_format = 6
+  fileout = 'psi2_band15_k20.cube'
+/
+
