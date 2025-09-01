@@ -1,0 +1,6 @@
+&BANDS
+    prefix         = 'Zr6CoTe2'
+    outdir         = './tmp/'
+    filband        = 'Zr6CoTe2.dat'
+    spin_component = 1
+/
